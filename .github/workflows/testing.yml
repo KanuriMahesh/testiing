@@ -18,7 +18,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     needs: build
-    environment: production  # Points to the protected environment
+    environment: DEV  # Points to the protected environment
     steps:
       - name: Deploy the project
         run: echo "Deploying the project..."
